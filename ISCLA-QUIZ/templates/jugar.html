@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243A">
+  <title>Pregunta | ISCLA QUIZ</title>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/estilo.css">
+  <link rel="stylesheet" href="../static/css/interfaz.css">
+  <script defer src="../static/js/servicio.js"></script>
+  <script defer src="../static/js/juego.js"></script>
+</head>
+<body class="stage" data-page="jugar">
+<a class="skip" href="#contenido">Ir al contenido</a>
+<div class="canvas game-canvas">
+<header class="site-head"><a href="inicio.html" aria-label="Ir al inicio"><img class="logo" src="../static/img/logo.svg" width="231" height="77" alt="ISCLA, Instituto Superior Cultural Latino Americano"></a><div class="head-center"><span class="quiz-mark"><svg class="icon icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 2 9 2 12 0v-6M3 10v6"/></svg><b>QUIZ</b></span><span class="head-sub">Partida</span></div><span class="school-id"><span class="school-dot" aria-hidden="true"></span>ISCLA 0708</span></header>
+<main id="contenido" tabindex="-1">
+
+ <section class="game-box">
+  <div id="game-fallback" class="inner padded" hidden><h1>Pregunta</h1><p id="game-fallback-text"></p><a class="btn primary" href="acceso.html">Ingresar a una partida<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+  <div id="question-play" hidden>
+   <div class="game-meta"><span class="tag dark" id="game-progress"></span><span class="tag soft" id="game-matter"></span><span class="score-chip" id="game-score"></span></div>
+   <progress id="progress-bar" value="0" max="1" aria-label="Avance del cuestionario"></progress>
+   <div class="question-clock" id="question-clock">
+    <span id="clock-label">Tiempo restante</span><progress id="clock-bar" value="15" max="15" aria-labelledby="clock-label"></progress>
+    <strong id="clock-seconds" role="timer" aria-label="Segundos restantes">15 s</strong>
+   </div>
+   <p class="eyebrow" id="game-quiz"></p>
+   <h1 id="game-question" tabindex="-1"></h1><p id="game-instruction">Elegí una opción y confirmá tu respuesta.</p>
+   <form id="answer-form" method="post" novalidate>
+    <fieldset><legend class="sr-only">Opciones de respuesta</legend><div id="play-options" class="choice-grid"></div></fieldset>
+    <p class="message" id="answer-message" role="status" hidden></p>
+    <div class="game-actions"><button type="button" class="btn ghost" id="skip-question">Pasar sin responder</button><button type="submit" class="btn primary" id="confirm-answer">Confirmar respuesta <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button><button type="button" class="btn primary" id="retry-timeout" hidden>Registrar pregunta omitida</button></div>
+   </form>
+  </div>
+ </section></main>
+<footer class="site-foot"><span><strong>ISCLA 0708</strong><span class="foot-divider" aria-hidden="true"> / </span><span class="foot-institute">Instituto Superior Cultural Latino Americano</span></span><span class="foot-edition">ISCLA QUIZ</span></footer>
+</div>
+<noscript><p class="noscript">Activá JavaScript para ingresar y jugar.</p></noscript>
+</body>
+</html>

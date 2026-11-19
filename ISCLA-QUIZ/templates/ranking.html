@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243A">
+  <title>Ranking final | ISCLA QUIZ</title>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/estilo.css">
+  <link rel="stylesheet" href="../static/css/interfaz.css">
+  <script defer src="../static/js/servicio.js"></script>
+  <script defer src="../static/js/juego.js"></script>
+</head>
+<body class="stage" data-page="ranking">
+<a class="skip" href="#contenido">Ir al contenido</a>
+<div class="canvas game-canvas">
+<header class="site-head"><a href="inicio.html" aria-label="Ir al inicio"><img class="logo" src="../static/img/logo.svg" width="231" height="77" alt="ISCLA, Instituto Superior Cultural Latino Americano"></a><div class="head-center"><span class="quiz-mark"><svg class="icon icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 2 9 2 12 0v-6M3 10v6"/></svg><b>QUIZ</b></span><span class="head-sub">Clasificación</span></div><span class="school-id"><span class="school-dot" aria-hidden="true"></span>ISCLA 0708</span></header>
+<main id="contenido" tabindex="-1">
+
+ <section class="game-box ranking-box">
+  <div id="game-fallback" class="inner padded" hidden><h1>Ranking</h1><p id="game-fallback-text"></p><a class="btn primary" href="inicio.html">Volver al inicio<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+  <div id="ranking-content" hidden>
+   <div class="ranking-title"><span class="tag soft"><svg class="icon icon-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4h8v6a4 4 0 1 1-8 0V4Zm0 2H3v2a4 4 0 0 0 5 4m8-6h5v2a4 4 0 0 1-5 4m-4 2v6m-4 0h8"/></svg> ISCLA QUIZ</span><h1 id="ranking-title">Ranking final</h1><p id="ranking-quiz"></p><p id="ranking-status" class="muted" role="status"></p></div>
+   <p class="message" id="ranking-connection" role="status" hidden></p>
+   <div id="podium" class="podium" aria-hidden="true"></div>
+   <div class="inner standings">
+    <div class="standings-title"><p class="eyebrow section-label">POSICIONES</p><h2>Tabla de clasificación</h2></div>
+    <table><caption class="sr-only">Posiciones de la partida</caption><thead><tr><th scope="col">Posición</th><th scope="col">Nombre o alias</th><th scope="col">Puntos</th></tr></thead><tbody id="ranking-rows"></tbody></table><p id="ranking-empty" class="muted" hidden>No hay jugadores en esta partida.</p>
+   </div>
+   <div class="game-actions"><a id="ranking-back" class="btn soft" href="inicio.html"><svg class="icon icon-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6"/></svg> Volver al inicio</a><a class="btn primary" href="acceso.html">Ingresar a otra partida <svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a></div>
+  </div>
+ </section></main>
+<footer class="site-foot"><span><strong>ISCLA 0708</strong><span class="foot-divider" aria-hidden="true"> / </span><span class="foot-institute">Instituto Superior Cultural Latino Americano</span></span><span class="foot-edition">ISCLA QUIZ</span></footer>
+</div>
+<noscript><p class="noscript">Activá JavaScript para ingresar y jugar.</p></noscript>
+</body>
+</html>

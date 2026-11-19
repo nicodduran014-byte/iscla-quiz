@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243A">
+  <title>Acceso estudiante | ISCLA QUIZ</title>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/estilo.css">
+  <link rel="stylesheet" href="../static/css/interfaz.css">
+  <script defer src="../static/js/servicio.js"></script>
+  <script defer src="../static/js/juego.js"></script>
+</head>
+<body class="stage" data-page="acceso">
+<a class="skip" href="#contenido">Ir al contenido</a>
+<div class="canvas access-canvas">
+<header class="site-head"><a href="inicio.html" aria-label="Ir al inicio"><img class="logo" src="../static/img/logo.svg" width="231" height="77" alt="ISCLA, Instituto Superior Cultural Latino Americano"></a><div class="head-center"><span class="quiz-mark"><svg class="icon icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 2 9 2 12 0v-6M3 10v6"/></svg><b>ISCLA QUIZ</b></span></div><span class="school-id"><span class="school-dot" aria-hidden="true"></span>ISCLA 0708</span></header>
+<main id="contenido" tabindex="-1">
+
+ <div class="access-grid">
+   <div class="access-art"><img src="../static/img/estudiante.jpg" width="960" height="390" alt="Estudiante con una computadora"><span class="eyebrow">ISCLA QUIZ · ESTUDIANTES</span><h2>¿Listo para el desafío?</h2><p>Escaneá el QR que comparte tu docente o escribí el código manualmente. No necesitás una cuenta.</p></div>
+   <section class="access-card inner polish-in" aria-labelledby="access-title">
+     <div class="icon-tile"><svg class="icon icon-game" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10c2.5 0 4 2.5 4.6 7.6.4 3.8-2.5 4.8-4.4 2.9L15 15H9l-2.2 2.5c-1.9 1.9-4.8.9-4.4-2.9C3 9.5 4.5 7 7 7Z"/><path d="M6 11h5m-2.5-2.5v5m7.5-3.5h.1m2.9 2.5h.1"/></svg></div><span class="eyebrow section-label">ACCESO ESTUDIANTE</span><h1 id="access-title">Ingresar a una partida</h1><p>Ingresá tu alias para sumarte a la sala.</p>
+
+     <form id="join-form" class="access-form" novalidate>
+       <label for="codigo">Código de la partida</label><input id="codigo" name="codigo" class="code-input" placeholder="Ej. K7P4X9" maxlength="12" autocapitalize="characters" autocomplete="off" spellcheck="false" aria-describedby="code-hint join-message" required>
+       <small id="code-hint" class="hint">Si llegaste desde un QR, el código ya está cargado.</small>
+       <label for="alias">Nombre o alias</label><input id="alias" name="alias" placeholder="Ej. Sofía" maxlength="30" autocomplete="nickname" aria-describedby="alias-hint join-message" required>
+       <small id="alias-hint" class="hint">Hasta 30 caracteres.</small>
+       <p class="message" id="join-message" role="status" hidden></p>
+       <button type="submit" class="btn primary full">Ingresar<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+     </form>
+     <a class="text-link" href="inicio.html"><svg class="icon icon-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6"/></svg>Volver al inicio</a>
+   </section>
+ </div></main>
+<footer class="site-foot"><span><strong>ISCLA 0708</strong><span class="foot-divider" aria-hidden="true"> / </span><span class="foot-institute">Instituto Superior Cultural Latino Americano</span></span><span class="foot-edition">ISCLA QUIZ</span></footer>
+</div>
+<noscript><p class="noscript">Activá JavaScript para ingresar y jugar.</p></noscript>
+</body>
+</html>

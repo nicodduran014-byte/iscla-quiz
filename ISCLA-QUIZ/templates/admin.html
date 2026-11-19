@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243A">
+  <title>Panel y editor | ISCLA QUIZ</title>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/estilo.css">
+  <link rel="stylesheet" href="../static/css/interfaz.css">
+  <script defer src="../static/js/servicio.js"></script>
+  <script defer src="../static/js/juego.js"></script>
+</head>
+<body class="panel" data-page="admin">
+<a class="skip" href="#contenido">Ir al contenido</a>
+
+ <div class="dashboard">
+ <header class="dash-head"><a href="inicio.html" aria-label="Ir al inicio"><img class="logo" src="../static/img/logo.svg" width="231" height="77" alt="ISCLA, Instituto Superior Cultural Latino Americano"></a><div class="dash-title"><svg class="icon icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 2 9 2 12 0v-6M3 10v6"/></svg><span>Panel docente</span><span class="dash-school"><span class="school-dot" aria-hidden="true"></span>ISCLA 0708</span></div>
+ <div class="dash-user"><span id="teacher-name" class="teacher-account" hidden></span><button type="button" class="btn small ghost" id="logout">Salir</button></div></header>
+ <aside class="sidebar"><p class="eyebrow sidebar-kicker">PANEL DOCENTE</p><nav aria-label="Panel docente"><a class="nav-item" data-nav="inicio" href="admin.html?vista=inicio"><svg class="icon icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10H3V10Zm6 10v-6h6v6"/></svg><span>Inicio</span></a><a class="nav-item" data-nav="partida" href="partida.html"><svg class="icon icon-game" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10c2.5 0 4 2.5 4.6 7.6.4 3.8-2.5 4.8-4.4 2.9L15 15H9l-2.2 2.5c-1.9 1.9-4.8.9-4.4-2.9C3 9.5 4.5 7 7 7Z"/><path d="M6 11h5m-2.5-2.5v5m7.5-3.5h.1m2.9 2.5h.1"/></svg><span>Partidas</span></a><a class="nav-item" data-nav="preguntas" href="admin.html?vista=preguntas"><svg class="icon icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h14a2 2 0 0 1 2 2v13H6a2 2 0 0 1-2-2V5Zm0 12c0-1 1-2 2-2h14M8 9h8"/></svg><span>Preguntas</span></a><a class="nav-item" data-nav="cuestionarios" href="admin.html?vista=cuestionarios"><svg class="icon icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm9 9-9 5-9-5m18 4-9 5-9-5"/></svg><span>Cuestionarios</span></a><a class="nav-item" data-nav="resultados" href="admin.html?vista=resultados"><svg class="icon icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16M9 15v-3m5 3V8m5 7V5"/></svg><span>Resultados</span></a></nav>
+ <div class="side-art"><img src="../static/img/panel-docente.svg" alt=""><b>ISCLA QUIZ</b><small>Panel de administración</small></div></aside>
+ <main id="contenido" class="dash-content" tabindex="-1" hidden>
+ <p class="message" id="panel-auth-message" role="status" hidden></p>
+ <div id="dash-views">
+ <section data-view="inicio" hidden>
+   <div class="dash-intro"><span class="eyebrow">PANEL DOCENTE</span><h1>Inicio del panel</h1><p>Prepará el material y organizá la próxima partida desde un solo lugar.</p>
+     <a class="btn primary" href="partida.html">Crear partida<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+   </div>
+   <div class="quick-grid" id="quick-grid"></div>
+   <div class="inner panel-note"><div class="icon-tile"><svg class="icon icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg></div><div><h2>Compartí una partida con tu curso</h2><p>Elegí una materia y proyectá el QR para que los estudiantes entren desde sus celulares.</p></div></div>
+ </section>
+ <section data-view="preguntas" hidden>
+   <div class="dash-heading"><div class="heading-copy"><div class="icon-tile dark"><svg class="icon icon-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h14a2 2 0 0 1 2 2v13H6a2 2 0 0 1-2-2V5Zm0 12c0-1 1-2 2-2h14M8 9h8"/></svg></div><div><span class="eyebrow">BANCO DE PREGUNTAS</span><h1>Editor de preguntas</h1><p>Administrá las preguntas de cada cuestionario.</p></div></div><button id="new-question" type="button" class="btn primary"><svg class="icon icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Nueva pregunta</button></div>
+   <div class="editor-grid">
+     <div class="inner table-card">
+       <div class="bank-title"><span class="eyebrow section-label">GESTIÓN</span><h2>Banco de preguntas</h2></div>
+       <div class="filters"><label>Buscar pregunta<input type="search" id="question-search" placeholder="Buscá por texto o tema"></label><label>Cuestionario<select id="question-filter"><option value="">Todos</option></select></label></div>
+       <div class="table-wrap" tabindex="0" role="region" aria-label="Preguntas disponibles"><table><thead><tr><th scope="col">#</th><th scope="col">Pregunta</th><th scope="col">Materia / tema</th><th scope="col">Tipo</th><th scope="col">Estado</th><th scope="col">Acciones</th></tr></thead><tbody id="question-rows"></tbody></table></div>
+       <div class="bank-pagination"><p id="question-count" class="muted table-caption" aria-live="polite"></p><div class="pagination-actions"><button id="bank-prev" class="btn ghost small" type="button">Anterior</button><button id="bank-next" class="btn soft small" type="button">Siguiente</button></div></div>
+     </div>
+     <aside class="summary-stack"><div class="inner summary"><h2><svg class="icon icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16M9 15v-3m5 3V8m5 7V5"/></svg> Resumen</h2><div id="question-summary" class="summary-numbers"></div></div><div class="inner summary"><h2><svg class="icon icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm9 9-9 5-9-5m18 4-9 5-9-5"/></svg> Acciones rápidas</h2><a class="btn soft full" href="admin.html?vista=cuestionarios">Ver cuestionarios</a><a class="btn soft full" href="partida.html">Crear partida</a></div></aside>
+   </div>
+ </section>
+ <section data-view="cuestionarios" hidden>
+   <div class="dash-heading"><div class="heading-copy"><div class="icon-tile dark"><svg class="icon icon-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 9 5-9 5-9-5 9-5Zm9 9-9 5-9-5m18 4-9 5-9-5"/></svg></div><div><span class="eyebrow">MATERIAL DE CLASE</span><h1>Cuestionarios</h1><p>Organizá tus preguntas por materia y autor.</p></div></div><button id="new-quiz" type="button" class="btn primary"><svg class="icon icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> Nuevo cuestionario</button></div>
+   <div id="quiz-list" class="quick-grid"></div>
+ </section>
+ <section data-view="resultados" hidden>
+   <div class="dash-heading"><div class="heading-copy"><div class="icon-tile dark"><svg class="icon icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v16h16M9 15v-3m5 3V8m5 7V5"/></svg></div><div><span class="eyebrow">HISTORIAL</span><h1>Resultados</h1><p>Consultá las partidas y sus clasificaciones.</p></div></div></div><div class="inner table-card" id="history-list"></div>
+ </section>
+ </div>
+ <p id="panel-status" class="toast" role="status" hidden></p>
+ <dialog id="quiz-dialog" aria-labelledby="quiz-dialog-title">
+   <div class="dialog-head"><h2 id="quiz-dialog-title">Nuevo cuestionario</h2><button class="x-button" type="button" data-close aria-label="Cerrar"><svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+   <form id="quiz-form" class="dialog-form" novalidate>
+      <label>Nombre<input name="titulo" maxlength="80" required placeholder="Ej. Sistemas numéricos"></label>
+      <div class="fields-2"><label>Materia<input name="materia" maxlength="60" required placeholder="Ej. Sistemas Operativos"></label><label>Autor<input name="autor" maxlength="60" required placeholder="Ej. Fernando Durán"></label></div>
+      <p class="message" id="quiz-message" role="status" hidden></p><div class="form-actions"><button class="btn ghost" type="button" data-close>Cancelar</button><button class="btn primary" type="submit">Guardar cuestionario</button></div>
+   </form>
+ </dialog>
+ <dialog id="question-dialog" aria-labelledby="question-dialog-title">
+   <div class="dialog-head"><h2 id="question-dialog-title">Nueva pregunta</h2><button class="x-button" type="button" data-close aria-label="Cerrar"><svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+   <form id="question-form" class="dialog-form" novalidate>
+     <div class="fields-2"><label>Cuestionario<select name="quiz" required></select></label><label>Tema <small>(opcional)</small><input name="tema" maxlength="70" placeholder="Ej. Sistema hexadecimal"></label></div>
+     <label>Enunciado<textarea name="texto" rows="2" maxlength="300" required></textarea></label>
+     <label>Explicación <small>(opcional, se muestra después de responder)</small><textarea name="explicacion" rows="2" maxlength="180"></textarea></label>
+     <fieldset class="option-editor"><legend>Opciones <small>· Marcá la correcta</small></legend>
+       <div class="edit-option"><label class="option-radio"><input type="radio" name="correcta" value="0" aria-label="Marcar opción A como correcta"><span>A</span></label><input name="opA" aria-label="Texto de la opción A" maxlength="180" placeholder="Opción A" required></div><div class="edit-option"><label class="option-radio"><input type="radio" name="correcta" value="1" aria-label="Marcar opción B como correcta"><span>B</span></label><input name="opB" aria-label="Texto de la opción B" maxlength="180" placeholder="Opción B" required></div><div class="edit-option"><label class="option-radio"><input type="radio" name="correcta" value="2" aria-label="Marcar opción C como correcta"><span>C</span></label><input name="opC" aria-label="Texto de la opción C" maxlength="180" placeholder="Opción C" required></div><div class="edit-option"><label class="option-radio"><input type="radio" name="correcta" value="3" aria-label="Marcar opción D como correcta"><span>D</span></label><input name="opD" aria-label="Texto de la opción D" maxlength="180" placeholder="Opción D" required></div>
+     </fieldset>
+     <p class="message" id="question-message" role="status" hidden></p><div class="form-actions"><button class="btn ghost" type="button" data-close>Cancelar</button><button class="btn primary" type="submit">Guardar pregunta</button></div>
+   </form>
+ </dialog>
+ <dialog id="confirm-dialog" aria-labelledby="confirm-title"><div class="dialog-head"><h2 id="confirm-title">Eliminar pregunta</h2><button type="button" class="x-button" data-close aria-label="Cerrar"><svg class="icon icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><form id="confirm-form" class="dialog-form"><p>Se eliminará del cuestionario. Las partidas ya creadas conservarán su copia.</p><div class="form-actions"><button type="button" class="btn ghost" data-close>Cancelar</button><button type="submit" class="btn danger">Eliminar pregunta</button></div></form></dialog></main>
+ </div>
+<noscript><p class="noscript">Activá JavaScript para ingresar y jugar.</p></noscript>
+</body>
+</html>

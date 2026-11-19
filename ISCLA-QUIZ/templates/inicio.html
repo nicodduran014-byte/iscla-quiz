@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243A">
+  <title>Inicio | ISCLA QUIZ</title>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/estilo.css">
+  <link rel="stylesheet" href="../static/css/interfaz.css">
+  <script defer src="../static/js/servicio.js"></script>
+  <script defer src="../static/js/juego.js"></script>
+</head>
+<body class="stage" data-page="inicio">
+<a class="skip" href="#contenido">Ir al contenido</a>
+<div class="canvas home-canvas">
+<header class="site-head"><a href="inicio.html" aria-label="Ir al inicio"><img class="logo" src="../static/img/logo.svg" width="231" height="77" alt="ISCLA, Instituto Superior Cultural Latino Americano"></a><div class="head-center"><span class="quiz-mark"><svg class="icon icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 2 9 2 12 0v-6M3 10v6"/></svg><b>ISCLA QUIZ</b></span></div><span class="school-id"><span class="school-dot" aria-hidden="true"></span>ISCLA 0708</span></header>
+<main id="contenido" tabindex="-1">
+  <div class="home-grid">
+    <section class="home-intro">
+      <span class="eyebrow home-kicker">APRENDÉ JUGANDO</span>
+      <img class="hero-art" src="../static/img/conocimiento.jpg" width="1150" height="800" alt="Dos estudiantes junto a un signo de pregunta amarillo">
+      <h1 id="motto" aria-live="polite">El conocimiento es tu poder,<br>el desafío es superarte</h1>
+      <div class="dots" role="group" aria-label="Frases de bienvenida">
+        <button type="button" data-slide="0" aria-label="Frase 1" aria-pressed="true"></button>
+        <button type="button" data-slide="1" aria-label="Frase 2" aria-pressed="false"></button>
+        <button type="button" data-slide="2" aria-label="Frase 3" aria-pressed="false"></button>
+      </div>
+    </section>
+    <section class="home-roles" aria-labelledby="roles-title">
+      <div class="roles-heading"><span class="eyebrow section-label">ACCESO A LA PLATAFORMA</span><h2 id="roles-title">Elegí cómo ingresar</h2></div>
+      <article class="role-card role-docente">
+        <img src="../static/img/docente.jpg" width="980" height="360" alt="">
+        <div class="role-copy"><span class="eyebrow role-num">01</span><h3>Acceso docente</h3><p>Prepará cuestionarios y organizá una partida para tu curso.</p>
+          <a class="btn soft" href="docente.html">Panel docente<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+      <article class="role-card role-estudiante">
+        <img src="../static/img/estudiante.jpg" width="960" height="390" alt="">
+        <div class="role-copy"><span class="eyebrow role-num">02</span><h3>Acceso estudiante</h3><p>Escaneá el QR de tu clase o ingresá con el código.</p>
+          <a class="btn primary" href="acceso.html">Ingresar a una partida<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </section>
+  </div>
+</main>
+<footer class="site-foot"><span><strong>ISCLA 0708</strong><span class="foot-divider" aria-hidden="true"> / </span><span class="foot-institute">Instituto Superior Cultural Latino Americano</span></span><span class="foot-edition">ISCLA QUIZ</span></footer>
+</div>
+<noscript><p class="noscript">Activá JavaScript para ingresar y jugar.</p></noscript>
+</body>
+</html>

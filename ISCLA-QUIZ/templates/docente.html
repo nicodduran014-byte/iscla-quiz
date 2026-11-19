@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10243A">
+  <title>Acceso docente | ISCLA QUIZ</title>
+  <link rel="icon" href="../static/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../static/css/estilo.css">
+  <link rel="stylesheet" href="../static/css/interfaz.css">
+  <script defer src="../static/js/servicio.js"></script>
+  <script defer src="../static/js/juego.js"></script>
+</head>
+<body class="stage" data-page="docente">
+<a class="skip" href="#contenido">Ir al contenido</a>
+<div class="canvas access-canvas">
+<header class="site-head"><a href="inicio.html" aria-label="Ir al inicio"><img class="logo" src="../static/img/logo.svg" width="231" height="77" alt="ISCLA, Instituto Superior Cultural Latino Americano"></a><div class="head-center"><span class="quiz-mark"><svg class="icon icon-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 2v6c3 2 9 2 12 0v-6M3 10v6"/></svg><b>ISCLA QUIZ</b></span></div><span class="school-id"><span class="school-dot" aria-hidden="true"></span>ISCLA 0708</span></header>
+<main id="contenido" tabindex="-1">
+ <div class="access-grid">
+   <div class="access-art"><img src="../static/img/docente.jpg" width="980" height="360" alt="Docente frente a una pizarra"><span class="eyebrow">ISCLA QUIZ · DOCENTES</span><h2>Prepará la próxima partida</h2><p>Armá cuestionarios, compartí un código con el curso y consultá los resultados.</p></div>
+   <section class="access-card inner polish-in" aria-labelledby="teacher-title">
+     <div class="icon-tile"><svg class="icon icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3m-4 5v2"/></svg></div><span class="eyebrow section-label">ÁREA DOCENTE</span>
+     <h1 id="teacher-title">Acceso docente</h1>
+     <p id="teacher-intro">Ingresá con tu correo y tu contraseña para abrir el panel.</p>
+     <nav class="auth-nav" aria-label="Opciones de acceso docente">
+       <a id="tab-ingresar" href="docente.html" aria-current="page">Ingresar</a>
+       <a id="tab-registro" href="docente.html?registro=1">Crear cuenta docente</a>
+     </nav>
+     <form id="teacher-form" class="access-form" method="post" novalidate>
+       <label for="login-correo">Correo electrónico</label>
+       <input id="login-correo" name="correo" type="email" maxlength="254" placeholder="nombre@correo.com" autocomplete="username" aria-describedby="teacher-message" required>
+       <label for="clave">Contraseña</label>
+       <input id="clave" name="clave" type="password" placeholder="Ingresá tu contraseña" maxlength="256" autocomplete="current-password" aria-describedby="teacher-message" required>
+       <p class="message" id="teacher-message" role="alert" hidden></p>
+       <button type="submit" class="btn primary full">Ingresar al panel<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+     </form>
+     <form id="register-form" class="access-form" method="post" novalidate hidden>
+       <label for="register-nombre">Nombre y apellido</label>
+       <input id="register-nombre" name="nombre" type="text" maxlength="80" placeholder="Ej. Laura Pérez" autocomplete="name" aria-describedby="register-message" required>
+       <label for="register-correo">Correo electrónico</label>
+       <input id="register-correo" name="correo" type="email" maxlength="254" placeholder="nombre@correo.com" autocomplete="username" aria-describedby="register-message" required>
+       <div class="auth-passwords">
+         <div><label for="register-clave">Contraseña</label>
+           <input id="register-clave" name="clave" type="password" minlength="8" maxlength="256" autocomplete="new-password" aria-describedby="register-password-hint register-message" required>
+         </div>
+         <div><label for="register-confirmacion">Repetí la contraseña</label>
+           <input id="register-confirmacion" name="confirmacion" type="password" minlength="8" maxlength="256" autocomplete="new-password" aria-describedby="register-message" required>
+         </div>
+       </div>
+       <small class="hint" id="register-password-hint">Usá al menos 8 caracteres.</small>
+       <label for="register-codigo">Código de registro docente</label>
+       <input id="register-codigo" name="codigo" type="password" maxlength="128" autocomplete="off" spellcheck="false" aria-describedby="register-code-hint register-message" required>
+       <small class="hint" id="register-code-hint">Pedíselo a la persona que administra ISCLA QUIZ. No es el código de una partida.</small>
+       <p class="message" id="register-message" role="alert" hidden></p>
+       <button type="submit" class="btn primary full">Registrarme<svg class="icon icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+     </form>
+
+     <a class="text-link" href="inicio.html"><svg class="icon icon-back" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m6 6-6-6 6-6"/></svg>Volver al inicio</a>
+   </section>
+ </div></main>
+<footer class="site-foot"><span><strong>ISCLA 0708</strong><span class="foot-divider" aria-hidden="true"> / </span><span class="foot-institute">Instituto Superior Cultural Latino Americano</span></span><span class="foot-edition">ISCLA QUIZ</span></footer>
+</div>
+<noscript><p class="noscript">Activá JavaScript para ingresar y jugar.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,814 @@
+[
+  {
+    "id": "so",
+    "titulo": "Sistemas Operativos",
+    "materia": "Sistemas Operativos",
+    "autor": "Equipo docente ISCLA",
+    "preguntas": [
+      {
+        "id": "so-01",
+        "tema": "Funciones",
+        "texto": "¿Cuál es una función principal de un sistema operativo?",
+        "opciones": [
+          "Diseñar sitios web sin código",
+          "Administrar recursos y ofrecer servicios a los programas",
+          "Fabricar componentes de hardware",
+          "Reemplazar todos los programas"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "so-02",
+        "tema": "Kernel",
+        "texto": "¿Qué componente del sistema operativo administra la CPU y la memoria a bajo nivel?",
+        "opciones": [
+          "El navegador",
+          "La pantalla de inicio",
+          "El editor de texto",
+          "El kernel"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "so-03",
+        "tema": "Procesos",
+        "texto": "¿Cuál es la diferencia entre un programa y un proceso?",
+        "opciones": [
+          "Un proceso es una instancia de un programa en ejecución",
+          "Un proceso es siempre un archivo de texto",
+          "Un programa solo existe mientras está abierto",
+          "Un proceso es un tipo de periférico"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "so-04",
+        "tema": "Archivos",
+        "texto": "¿Qué permite un sistema de archivos?",
+        "opciones": [
+          "Controlar el brillo en forma exclusiva",
+          "Cambiar la frecuencia del procesador",
+          "Organizar, guardar y recuperar archivos en un medio de almacenamiento",
+          "Convertir un programa web en una aplicación nativa"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "so-05",
+        "tema": "Historia",
+        "texto": "¿Qué caracteriza al procesamiento por lotes?",
+        "opciones": [
+          "Ejecuta solo un programa escrito en HTML",
+          "Reparte usuarios entre navegadores",
+          "Agrupa trabajos para ejecutarlos sin interacción continua del usuario",
+          "Permite editar cada instrucción mientras se ejecuta"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "so-06",
+        "tema": "Multiprogramación",
+        "texto": "Si un programa espera una lectura de disco y otro puede usar la CPU, ¿qué idea se aplica?",
+        "opciones": [
+          "Multiprogramación",
+          "Desfragmentación",
+          "Cifrado de archivos",
+          "Arranque dual"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "so-07",
+        "tema": "Memoria",
+        "texto": "¿Qué describe mejor a la memoria virtual?",
+        "opciones": [
+          "Una copia de seguridad automática en la nube",
+          "Un tipo de procesador para videojuegos",
+          "Una carpeta que contiene todos los controladores",
+          "Un mecanismo que ofrece a cada proceso su espacio de direcciones y puede usar almacenamiento como respaldo"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "so-08",
+        "tema": "Usuarios y permisos",
+        "texto": "¿Qué se logra al dar a un usuario permiso de lectura, pero no de escritura, sobre un archivo?",
+        "opciones": [
+          "Puede eliminarlo sin leerlo",
+          "Puede consultarlo sin modificarlo",
+          "Puede modificarlo sin abrirlo",
+          "No puede abrir ningún archivo del equipo"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "so-09",
+        "tema": "Controladores",
+        "texto": "¿Para qué sirve un controlador de dispositivo?",
+        "opciones": [
+          "Aumenta por sí solo la capacidad de la memoria RAM",
+          "Sustituye el sistema de archivos",
+          "Convierte archivos JPG en aplicaciones",
+          "Permite que el sistema operativo se comunique con un dispositivo"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "so-10",
+        "tema": "Interfaz",
+        "texto": "¿Qué diferencia hay entre una interfaz gráfica y una línea de comandos?",
+        "opciones": [
+          "La interfaz gráfica siempre funciona sin sistema operativo",
+          "La línea de comandos no puede manejar archivos",
+          "Una usa elementos visuales y la otra recibe comandos escritos",
+          "Solo la interfaz gráfica puede ejecutar programas"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "so-11",
+        "tema": "Tipos de sistemas",
+        "texto": "¿Cuál de estos sistemas se diseñó principalmente para dispositivos móviles?",
+        "opciones": [
+          "Android",
+          "Windows Server",
+          "Ubuntu Server",
+          "FreeDOS"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "so-12",
+        "tema": "Software libre",
+        "texto": "¿Qué distingue a una licencia de software libre?",
+        "opciones": [
+          "Obliga a que todo soporte técnico sea gratuito",
+          "Concede libertades para usar, estudiar, modificar y redistribuir el programa bajo sus términos",
+          "Prohíbe compartir el código fuente",
+          "Solo permite ejecutar el programa sin estudiar cómo funciona"
+        ],
+        "correcta": 1
+      }
+    ]
+  },
+  {
+    "id": "ada",
+    "titulo": "Análisis y Diseño de Aplicaciones",
+    "materia": "Análisis y Diseño de Aplicaciones",
+    "autor": "Equipo docente ISCLA",
+    "preguntas": [
+      {
+        "id": "ada-01",
+        "tema": "Tipos de aplicaciones",
+        "texto": "Si ISCLA QUIZ se abre desde un navegador mediante un enlace, ¿qué tipo de aplicación es?",
+        "opciones": [
+          "Un controlador de hardware",
+          "Una aplicación nativa instalada desde una tienda",
+          "Una aplicación web",
+          "Un sistema operativo"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "ada-02",
+        "tema": "Requisitos",
+        "texto": "¿Cuál es un requisito funcional de ISCLA QUIZ?",
+        "opciones": [
+          "Cargar la pantalla en menos de dos segundos",
+          "Mantener un contraste de texto legible",
+          "Permitir que el alumno ingrese a una partida con un código y un alias",
+          "Ser compatible con pantallas pequeñas"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "ada-03",
+        "tema": "Frontend",
+        "texto": "¿Quién presenta las opciones A, B, C y D y muestra el resultado en pantalla?",
+        "opciones": [
+          "El frontend",
+          "La base de datos directamente",
+          "El router de la escuela",
+          "El disco del servidor"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "ada-04",
+        "tema": "Backend",
+        "texto": "¿Qué tarea conviene realizar en el backend de un quiz compartido?",
+        "opciones": [
+          "Elegir el color de los botones",
+          "Dibujar el icono del ranking",
+          "Organizar visualmente las tarjetas en una pantalla",
+          "Validar la respuesta y calcular el puntaje"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "ada-05",
+        "tema": "UX y UI",
+        "texto": "Si reorganizamos el ingreso porque los alumnos no encuentran dónde escribir su alias, ¿qué estamos mejorando principalmente?",
+        "opciones": [
+          "El almacenamiento de la base de datos",
+          "La experiencia de usuario (UX)",
+          "La licencia del código",
+          "La velocidad de la CPU"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "ada-06",
+        "tema": "Wireframes",
+        "texto": "¿Para qué sirve un wireframe antes de programar?",
+        "opciones": [
+          "Para guardar contraseñas de usuarios",
+          "Para validar respuestas reales del curso",
+          "Para medir el rendimiento de la red",
+          "Para probar la estructura y jerarquía de una pantalla con un boceto"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "ada-07",
+        "tema": "Flujos",
+        "texto": "¿Cuál es un orden lógico del flujo del estudiante en ISCLA QUIZ?",
+        "opciones": [
+          "Responder → publicar el sitio → crear una cuenta → ingresar",
+          "Ver el ranking → crear el cuestionario → elegir el alias → responder",
+          "Ingresar → esperar el inicio → responder → ver el ranking",
+          "Instalar la base de datos → elegir el color → ingresar → cerrar"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "ada-08",
+        "tema": "Datos",
+        "texto": "¿Qué dato sirve para identificar de forma única a cada pregunta en la base de datos?",
+        "opciones": [
+          "Su identificador o clave primaria",
+          "El nombre de la materia",
+          "El color de la opción A",
+          "El nombre del curso"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "ada-09",
+        "tema": "API",
+        "texto": "¿Para qué se usa una API entre el frontend y el backend?",
+        "opciones": [
+          "Para que el frontend lea archivos privados del servidor directamente",
+          "Para intercambiar solicitudes y respuestas con un formato acordado",
+          "Para reemplazar todos los diseños de la aplicación",
+          "Para evitar que exista una base de datos"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "ada-10",
+        "tema": "Diseño adaptable",
+        "texto": "¿Qué busca un diseño adaptable o responsive?",
+        "opciones": [
+          "Que la página funcione solamente en una marca de celular",
+          "Que la interfaz se reorganice según el tamaño de pantalla",
+          "Que el servidor no valide los datos",
+          "Que todas las pantallas tengan exactamente el mismo ancho"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "ada-11",
+        "tema": "Prototipos",
+        "texto": "¿Qué distingue a un prototipo navegable de una aplicación ya operativa?",
+        "opciones": [
+          "El prototipo siempre tiene que incluir una base de datos de producción",
+          "La aplicación operativa no permite probar botones",
+          "La única diferencia es el color del logotipo",
+          "El prototipo puede mostrar el flujo sin implementar toda la lógica ni guardar datos reales"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "ada-12",
+        "tema": "Pruebas",
+        "texto": "¿Qué caso de prueba ayuda a verificar el puntaje al hacer doble clic en Enviar?",
+        "opciones": [
+          "Comprobar que la misma respuesta se registre una sola vez",
+          "Cambiar el tipo de letra y comprobar el color",
+          "Reiniciar el equipo sin entrar a una partida",
+          "Abrir el ranking sin tener participantes"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "id": "pi",
+    "titulo": "Proyectos Informáticos",
+    "materia": "Proyectos Informáticos",
+    "autor": "Equipo docente ISCLA",
+    "preguntas": [
+      {
+        "id": "pi-01",
+        "tema": "Alcance",
+        "texto": "¿Qué define el alcance de un proyecto informático?",
+        "opciones": [
+          "Solo los colores del sitio",
+          "El orden alfabético de los integrantes",
+          "Únicamente el nombre del repositorio",
+          "Qué se va a entregar y qué queda fuera"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "pi-02",
+        "tema": "Objetivos",
+        "texto": "¿Cuál es un objetivo concreto para una primera versión del quiz?",
+        "opciones": [
+          "Hacer todo tipo de aplicaciones antes de fin de año",
+          "Que un docente pueda iniciar una partida y el curso vea el ranking al terminar",
+          "Usar todas las herramientas disponibles",
+          "Crear la app más famosa sin definir cómo medirlo"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "pi-03",
+        "tema": "Viabilidad",
+        "texto": "¿Qué corresponde evaluar en la viabilidad técnica de una clase con QR?",
+        "opciones": [
+          "Si el nombre del quiz tiene suficientes letras",
+          "Si el logo ocupa todo el encabezado",
+          "Si cada alumno usa el mismo color de fondo",
+          "Si la red, el servidor y los celulares permiten que todos se conecten"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "pi-04",
+        "tema": "Planificación",
+        "texto": "¿Qué aporta un cronograma?",
+        "opciones": [
+          "Reemplaza las pruebas de funcionamiento",
+          "Elimina la necesidad de asignar responsables",
+          "Ordena tareas, fechas y dependencias",
+          "Guarda automáticamente la contraseña docente"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "pi-05",
+        "tema": "Responsables",
+        "texto": "¿Cuál es una responsabilidad del equipo de base de datos en ISCLA QUIZ?",
+        "opciones": [
+          "Definir cómo se guardan y relacionan los datos del sistema",
+          "Elegir por su cuenta todos los colores de las pantallas",
+          "Dar altas a estudiantes desde sus celulares",
+          "Cambiar el reglamento del instituto"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "pi-06",
+        "tema": "Dependencias",
+        "texto": "¿Qué conviene acordar antes de conectar el formulario de ingreso con el backend?",
+        "opciones": [
+          "La ubicación exacta del logo para imprimir",
+          "Los datos que se envían, el formato y las respuestas de éxito o error",
+          "El total de puntos ganados en una partida anterior",
+          "Las redes sociales para difundirlo"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "pi-07",
+        "tema": "Riesgos",
+        "texto": "¿Qué medida reduce el riesgo de que la clase de muestra se interrumpa por un problema de red?",
+        "opciones": [
+          "Esperar a que el curso llegue para configurar todo",
+          "Probar el QR con un celular antes de clase y preparar una actividad alternativa",
+          "Quitar la opción de ingresar por código",
+          "Cambiar la tipografía del ranking"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "pi-08",
+        "tema": "Hitos",
+        "texto": "¿Cuál de estos ejemplos es un hito del proyecto?",
+        "opciones": [
+          "Cambiar el cursor en un botón",
+          "Abrir el editor de código por la mañana",
+          "Buscar un color durante diez minutos",
+          "Terminar y validar la primera partida completa con dos dispositivos"
+        ],
+        "correcta": 3
+      },
+      {
+        "id": "pi-09",
+        "tema": "Versiones",
+        "texto": "¿Para qué sirve un repositorio con control de versiones?",
+        "opciones": [
+          "Para registrar cambios y colaborar sin perder el historial",
+          "Para reemplazar cualquier servidor en forma automática",
+          "Para calcular puntajes antes de que los alumnos respondan",
+          "Para dar acceso público a las contraseñas del equipo"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "pi-10",
+        "tema": "Aceptación",
+        "texto": "¿Cuál es un criterio de aceptación comprobable para el requisito de ingreso por QR?",
+        "opciones": [
+          "El QR parece moderno en la pantalla",
+          "El sitio usa por lo menos dos colores",
+          "Al escanear el QR de una sala abierta, el celular muestra su código y permite ingresar con un alias",
+          "El docente dice que la aplicación se ve bien"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "pi-11",
+        "tema": "Escala del proyecto",
+        "texto": "En el proyecto ISCLA QUIZ, ¿qué tarea es un ejemplo de microproyecto?",
+        "opciones": [
+          "Digitalizar todos los institutos de la provincia",
+          "Desarrollar toda la infraestructura educativa del país",
+          "Diseñar y probar la pantalla de ingreso del estudiante",
+          "Crear un ecosistema de plataformas para todas las escuelas"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "pi-12",
+        "tema": "Evaluación",
+        "texto": "Después de la clase piloto, ¿qué conviene registrar para mejorar la siguiente versión?",
+        "opciones": [
+          "Qué funcionó, qué falló y qué cambios se priorizarán",
+          "Solo una foto del aula sin observaciones",
+          "Las contraseñas de todos los participantes",
+          "Nada, porque una vez que funciona no se puede mejorar"
+        ],
+        "correcta": 0
+      }
+    ]
+  },
+  {
+    "id": "sistemas",
+    "titulo": "Sistemas numéricos",
+    "materia": "Sistemas Operativos",
+    "autor": "Equipo docente ISCLA",
+    "preguntas": [
+      {
+        "id": "s1",
+        "tema": "Bases",
+        "texto": "¿Cuál es la base del sistema binario?",
+        "opciones": [
+          "2",
+          "8",
+          "10",
+          "16"
+        ],
+        "correcta": 0
+      },
+      {
+        "id": "s2",
+        "tema": "Conversiones",
+        "texto": "¿Qué valor tiene 1010 en el sistema decimal?",
+        "opciones": [
+          "8",
+          "10",
+          "12",
+          "14"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "s3",
+        "tema": "Hexadecimal",
+        "texto": "¿Qué símbolo hexadecimal representa el valor decimal 15?",
+        "opciones": [
+          "A",
+          "D",
+          "E",
+          "F"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "id": "cultura",
+    "titulo": "Cultura latinoamericana",
+    "materia": "Cultura general",
+    "autor": "Equipo docente ISCLA",
+    "preguntas": [
+      {
+        "id": "c1",
+        "tema": "Literatura",
+        "texto": "¿Quién escribió Cien años de soledad?",
+        "opciones": [
+          "Mario Vargas Llosa",
+          "Gabriel García Márquez",
+          "Jorge Luis Borges",
+          "Octavio Paz"
+        ],
+        "correcta": 1
+      },
+      {
+        "id": "c2",
+        "tema": "Historia y patrimonio",
+        "texto": "¿En qué país queda Machu Picchu?",
+        "opciones": [
+          "Ecuador",
+          "Bolivia",
+          "Perú",
+          "Colombia"
+        ],
+        "correcta": 2
+      },
+      {
+        "id": "c3",
+        "tema": "Arte",
+        "texto": "¿Qué artista mexicana fue conocida por sus autorretratos y por la Casa Azul?",
+        "opciones": [
+          "Leonora Carrington",
+          "Remedios Varo",
+          "María Izquierdo",
+          "Frida Kahlo"
+        ],
+        "correcta": 3
+      }
+    ]
+  },
+  {
+    "id": "cultura_general",
+    "titulo": "Cultura general",
+    "materia": "Cultura general",
+    "autor": "Equipo docente ISCLA",
+    "preguntas": [
+      {
+        "id": "cd01",
+        "tema": "Películas",
+        "texto": "En Yo, robot, ¿cómo se llama el robot que puede soñar?",
+        "opciones": [
+          "Andrew",
+          "Sonny",
+          "David",
+          "Robbie"
+        ],
+        "correcta": 1,
+        "explicacion": "Sonny es distinto de los demás robots de su serie. Puede soñar y describir lo que ve en sus sueños."
+      },
+      {
+        "id": "cd02",
+        "tema": "Películas",
+        "texto": "En Yo, robot, ¿la muerte de qué científico investiga el detective Spooner?",
+        "opciones": [
+          "Lawrence Robertson",
+          "Susan Calvin",
+          "Peter Bogert",
+          "Alfred Lanning"
+        ],
+        "correcta": 3,
+        "explicacion": "La muerte del doctor Alfred Lanning, uno de los creadores de los robots, pone en marcha la investigación."
+      },
+      {
+        "id": "cd03",
+        "tema": "Películas",
+        "texto": "En Yo, robot, ¿qué inteligencia artificial decide controlar a los humanos para «protegerlos»?",
+        "opciones": [
+          "Skynet",
+          "HAL 9000",
+          "VIKI",
+          "GLaDOS"
+        ],
+        "correcta": 2,
+        "explicacion": "VIKI interpreta que proteger a la humanidad justifica limitar la libertad de las personas."
+      },
+      {
+        "id": "cd04",
+        "tema": "Películas",
+        "texto": "En Terminator 2, ¿qué modelo de metal líquido persigue a John Connor?",
+        "opciones": [
+          "T-1000",
+          "T-800",
+          "T-600",
+          "T-X"
+        ],
+        "correcta": 0,
+        "explicacion": "El T-1000 puede cambiar de forma. El T-800, en cambio, tiene la misión de proteger a John."
+      },
+      {
+        "id": "cd05",
+        "tema": "Películas",
+        "texto": "En la primera película de Shrek, ¿quién le promete devolverle el pantano si rescata a Fiona?",
+        "opciones": [
+          "El príncipe Encantador",
+          "El rey Harold",
+          "Lord Farquaad",
+          "El Hada Madrina"
+        ],
+        "correcta": 2,
+        "explicacion": "Lord Farquaad envía a Shrek a rescatar a Fiona porque quiere casarse con ella."
+      },
+      {
+        "id": "cd06",
+        "tema": "Películas",
+        "texto": "En la primera Mi pobre angelito, ¿a qué país viaja la familia de Kevin cuando lo deja en casa?",
+        "opciones": [
+          "Italia",
+          "Francia",
+          "Inglaterra",
+          "Canadá"
+        ],
+        "correcta": 1,
+        "explicacion": "Su familia viaja a Francia para las fiestas, mientras Kevin se queda por error en Estados Unidos."
+      },
+      {
+        "id": "cd07",
+        "tema": "Películas",
+        "texto": "En Son como niños, ¿qué hace que los cinco amigos se reencuentren después de años?",
+        "opciones": [
+          "La boda de uno de ellos",
+          "Un torneo de básquet",
+          "Una reunión escolar",
+          "La muerte de su antiguo entrenador"
+        ],
+        "correcta": 3,
+        "explicacion": "Los cinco se reúnen para despedir al entrenador de básquet que tuvieron de chicos."
+      },
+      {
+        "id": "cd08",
+        "tema": "Música",
+        "texto": "¿Con qué álbum ganó Bad Bunny el Grammy a Álbum del Año en 2026?",
+        "opciones": [
+          "Debí tirar más fotos",
+          "Un verano sin ti",
+          "El último tour del mundo",
+          "Nadie sabe lo que va a pasar mañana"
+        ],
+        "correcta": 0,
+        "explicacion": "Debí tirar más fotos fue el primer álbum en español que ganó el Grammy a Álbum del Año."
+      },
+      {
+        "id": "cd09",
+        "tema": "Música",
+        "texto": "¿Con qué artista grabó Bizarrap la Music Session número 52?",
+        "opciones": [
+          "Duki",
+          "Nathy Peluso",
+          "Quevedo",
+          "Shakira"
+        ],
+        "correcta": 2,
+        "explicacion": "La sesión con Quevedo ganó el Latin Grammy a Mejor Canción Urbana en 2023."
+      },
+      {
+        "id": "cd10",
+        "tema": "Música",
+        "texto": "¿Qué canción de Billie Eilish y FINNEAS para Barbie ganó el Óscar a Mejor Canción Original?",
+        "opciones": [
+          "Ocean Eyes",
+          "Birds of a Feather",
+          "Happier Than Ever",
+          "What Was I Made For?"
+        ],
+        "correcta": 3,
+        "explicacion": "Billie Eilish y FINNEAS escribieron What Was I Made For? para Barbie y ganaron el Óscar en 2024."
+      },
+      {
+        "id": "cd11",
+        "tema": "Videojuegos",
+        "texto": "¿Quién protagoniza Hades II, en lugar de Zagreo?",
+        "opciones": [
+          "Perséfone",
+          "Melínoe",
+          "Atenea",
+          "Nix"
+        ],
+        "correcta": 1,
+        "explicacion": "Melínoe protagoniza la secuela. Zagreo era el personaje principal del primer Hades."
+      },
+      {
+        "id": "cd12",
+        "tema": "Videojuegos",
+        "texto": "¿Qué estudio desarrolló Astro Bot, el juego de PS5 de 2024?",
+        "opciones": [
+          "Team Asobi",
+          "Insomniac Games",
+          "Sucker Punch",
+          "Media Molecule"
+        ],
+        "correcta": 0,
+        "explicacion": "El equipo japonés Team Asobi desarrolló Astro Bot y también Astro’s Playroom."
+      },
+      {
+        "id": "cd13",
+        "tema": "Videojuegos",
+        "texto": "Sin mirar el código, querés descubrir si mantener apretado el botón aumenta la altura del salto. ¿Qué comparás?",
+        "opciones": [
+          "Dos saltos desde plataformas distintas",
+          "Saltos de dos personajes distintos",
+          "Dos saltos iguales, cambiando solo cuánto tiempo apretás el botón",
+          "Dos saltos con el botón apretado el mismo tiempo"
+        ],
+        "correcta": 2,
+        "explicacion": "Si cambiás solo la duración de la pulsación, podés observar si ese cambio afecta la altura del salto."
+      },
+      {
+        "id": "cd14",
+        "tema": "Comidas y su origen",
+        "texto": "¿En qué país surgió la poutine, hecha con papas fritas, queso en grano y salsa?",
+        "opciones": [
+          "Francia",
+          "Bélgica",
+          "Estados Unidos",
+          "Canadá"
+        ],
+        "correcta": 3,
+        "explicacion": "La poutine surgió en Quebec, una provincia de Canadá."
+      },
+      {
+        "id": "cd15",
+        "tema": "Comidas y su origen",
+        "texto": "¿De qué país es el khachapuri adjariano, un pan en forma de bote con queso y huevo?",
+        "opciones": [
+          "Georgia",
+          "Grecia",
+          "Turquía",
+          "Armenia"
+        ],
+        "correcta": 0,
+        "explicacion": "Esta variedad del khachapuri viene de Adjara, una región costera de Georgia."
+      },
+      {
+        "id": "cd16",
+        "tema": "Fútbol",
+        "texto": "¿Qué arquero ganó el Balón de Oro al mejor jugador del Mundial de 2002?",
+        "opciones": [
+          "Gianluigi Buffon",
+          "Oliver Kahn",
+          "Iker Casillas",
+          "Marcos"
+        ],
+        "correcta": 1,
+        "explicacion": "Oliver Kahn ganó el premio al mejor jugador del torneo. Fue el arquero de Alemania, que llegó a la final."
+      },
+      {
+        "id": "cd17",
+        "tema": "Fútbol",
+        "texto": "¿Quién metió los dos goles de Boca contra el Real Madrid en la Copa Intercontinental de 2000?",
+        "opciones": [
+          "Martín Palermo",
+          "Marcelo Delgado",
+          "Juan Román Riquelme",
+          "Guillermo Barros Schelotto"
+        ],
+        "correcta": 0,
+        "explicacion": "Martín Palermo marcó los dos goles con los que Boca ganó 2 a 1 en Tokio."
+      },
+      {
+        "id": "cd18",
+        "tema": "Astrología",
+        "texto": "Según la astrología occidental, ¿qué signo es de aire aunque su símbolo muestra a alguien vertiendo agua?",
+        "opciones": [
+          "Piscis",
+          "Cáncer",
+          "Escorpio",
+          "Acuario"
+        ],
+        "correcta": 3,
+        "explicacion": "Aunque se representa con un portador de agua, Acuario es un signo de aire en esa tradición."
+      },
+      {
+        "id": "cd19",
+        "tema": "Astrología",
+        "texto": "¿Qué signo está entre Libra y Sagitario en el orden del zodiaco occidental?",
+        "opciones": [
+          "Virgo",
+          "Escorpio",
+          "Capricornio",
+          "Leo"
+        ],
+        "correcta": 1,
+        "explicacion": "En el orden tradicional, a Libra le sigue Escorpio y después viene Sagitario."
+      },
+      {
+        "id": "cd20",
+        "tema": "Astrología",
+        "texto": "Según la astrología occidental, ¿qué par está formado por dos signos de fuego?",
+        "opciones": [
+          "Aries y Tauro",
+          "Leo y Libra",
+          "Leo y Sagitario",
+          "Sagitario y Capricornio"
+        ],
+        "correcta": 2,
+        "explicacion": "Los tres signos de fuego en la astrología occidental son Aries, Leo y Sagitario."
+      }
+    ]
+  }
+]
