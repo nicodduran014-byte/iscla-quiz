@@ -3,6 +3,7 @@ Juego de preguntas para el aula. El docente crea una partida por materia y compa
 
 ¿Vas a continuar el desarrollo? Empezá por la guía para reutilizar el frontend. Ahí están las pantallas listas, los archivos que podés editar y el punto de conexión con el backend.
 
+pasos para ejecutar la demo (no es la app terminada, simplemente es una demo para ejecutar y probar el frontend)
 Para una clase en el aula
 Descomprimí este ZIP en la computadora del docente. Necesitás Python 3.10 o posterior. No hay paquetes que instalar.
 En Windows, abrí Iniciar-ISCLA-QUIZ.cmd. En macOS o Linux, abrí una terminal en la carpeta y ejecutá python3 servidor/app.py.
